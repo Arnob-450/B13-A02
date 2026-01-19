@@ -213,6 +213,82 @@
 .reating h1 i{
     font-size: 40px;
 }
+/* why-choose */
+#why-choose-container{
+    padding: 40px 200px;
+    background-color: #230E3D;
+}
+.why-choose-title{
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+.why-choose-title h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+#cart-1{
+   grid-area: first; 
+   padding:107px 40px;
+}
+#cart-2{
+    grid-area: second;  
+}
+#cart-3{
+    grid-area: third;  
+}
+#cart-4{
+    grid-area: fourth;  
+}
+#cart-5{
+    grid-area: fifth;  
+}
+.why-choose-cart-container{
+   gap: 30px;
+   display: grid;
+  grid-template-areas:
+  "first second second"
+  "first third third"
+  "fourth fourth fifth" ;
+  margin-bottom:80px;
+
+}
+.why-choose-carts{
+    background-color:rgba(53, 17, 101, 0.4);
+    padding:40px;
+    
+    border-radius:40px;
+    
+}
+.why-choose-carts:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.why-choose-carts img{
+    width: 50px;
+    height: auto;
+}
+.why-choose-carts i{
+    font-size: 50px;
+     background-image: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.why-choose-carts h3{
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.why-choose-carts p{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 200;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .nav-container{
@@ -284,7 +360,7 @@
         font-size: 14px;
     }
     #about-container{
-        padding: 20px;
+        padding: 20px; 
     }
     .reating-container{
         grid-template-columns: repeat(2,1fr);
@@ -298,12 +374,35 @@
         line-height: 20px;
         margin-bottom: 0px;
     }
+    #why-choose-container{
+        padding: 8px 20px;
+    }
+    .why-choose-title h1{
+    font-size: 32px;
+    font-weight: bold;
+    }
+    .why-choose-cart-container{
+        gap:10px;
+        grid-template-areas: 
+        "first"
+        "second"
+        "third"
+        "fourth"
+        "fifth";
+    }
+    .why-choose-carts{
+        padding: 24px;
+    }
+    #cart-1{
+        padding: 24px;
+    }
+}
 
     
 
 
 
 
-}
+
 
 
