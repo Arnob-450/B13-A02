@@ -13,6 +13,11 @@
 }
 .btn:hover{
     cursor: pointer;
+   box-shadow:
+  0 0px 35px 0px rgba(0, 0, 0, 0.35),
+  0 0 32px rgba(255, 180, 220, 0.35);
+transform: translateY(-3px);
+
     
 }
 .btn{
@@ -22,6 +27,7 @@
    font-size: 16px;
    font-weight: 600;
    color: #FFFFFF;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
    
 }
 .menu-bar{
@@ -349,10 +355,12 @@
    color:#00FF88 ;
    font-size: 16px;
 }
+/* meet the host style */
 #meet-the-host{
-    padding: 40px 200px;
+    padding: 120px 200px;
     background-color: #1A0B2E;
-    padding-top: 80px;
+    
+    
 }
 #meet-the-host h1{
     color: #FFFFFF;
@@ -415,6 +423,51 @@
 .social-media i:hover{
     border-color: #FB09B4;
    
+}
+/* footer style */
+footer{
+    background-image:url(./assets/footer-bg.png);
+    padding: 120px 200px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: auto;
+    
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+footer h1{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 10px;
+    
+}
+footer h1 span{
+    background-image: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+    margin-bottom: 32px;
+}
+footer p{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
 }
 
 
@@ -575,6 +628,24 @@
     }
     .social-media{
         justify-content: center;
+        
+    }
+    footer{
+     max-width: 100%;
+     padding: 20px;
+     margin: 0 auto;
+     background-size: 100% 100%;
+    }
+    .text-container{
+        padding: 30px 20px;
+    }
+    footer h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .sponsors{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
     }
 
 }
