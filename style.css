@@ -291,11 +291,12 @@
 #episodes{
     padding: 40px 200px;
     background-color: #1A0B2E;
+    padding-top: 80px;
+    
 }
 #episodes h1{
     color: #FFFFFF;
     text-align: center;
-    
     font-size: 48px;
     margin-bottom: 40px;
 }
@@ -348,6 +349,74 @@
    color:#00FF88 ;
    font-size: 16px;
 }
+#meet-the-host{
+    padding: 40px 200px;
+    background-color: #1A0B2E;
+    padding-top: 80px;
+}
+#meet-the-host h1{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.profile-container{
+    display: flex;
+    padding: 40px;
+    background-color:rgba(53, 17, 101, 0.4) ;
+    border-radius: 40px;
+    transition: 0.4s ease;
+}
+.profile-container:hover{
+    transform: translateY(-5px);
+}
+
+.profile-discription{
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+.profile-discription h2{
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.profile-discription p{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.social-media{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.social-media i{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #533C72;
+    border-radius: 50%;
+    font-size: 20px;
+    background-image: linear-gradient(135deg, #F7E93F, #FB09B4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.social-media i:hover{
+    border-color: #FB09B4;
+   
+}
+
 
 @media screen and (max-width: 576px) {
     .nav-container{
@@ -473,6 +542,39 @@
     }
     .video-title p{
         font-size: 16px;
+    }
+    #meet-the-host{
+        padding: 30px 20px;
+    }
+    #meet-the-host h1{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    .profile-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        text-align: center;
+    }
+    .profile-pic{
+        margin-bottom: 20px;
+    }
+    .profile-pic img{
+        width: 150px;
+        height: 150px;
+    }
+    .profile-discription{
+        margin-left: 0;
+        align-items: center;
+    }
+    .profile-discription h2{
+        font-size: 26px;
+    }
+    .profile-discription p{
+        font-size: 14px;
+    }
+    .social-media{
+        justify-content: center;
     }
 
 }
