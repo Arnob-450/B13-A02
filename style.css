@@ -257,13 +257,13 @@
 .why-choose-carts{
     background-color:rgba(53, 17, 101, 0.4);
     padding:40px;
-    
+     transition: 0.5s ease;
     border-radius:40px;
     
 }
 .why-choose-carts:hover{
     transform: translateY(-5px);
-    transition: 0.5s;
+   
 }
 .why-choose-carts img{
     width: 50px;
@@ -287,8 +287,67 @@
     margin-top: 15px;
     font-weight: 200;
 }
+/* Featured episodes style */
+#episodes{
+    padding: 40px 200px;
+    background-color: #1A0B2E;
+}
+#episodes h1{
+    color: #FFFFFF;
+    text-align: center;
+    
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.episode-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.episode-card{
+    background-color: #250D44;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+.episode-card:hover{
+    transform: translateY(-5px);
+    
+}
+.episode-card .video{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin-bottom: 0;
+}
 
+.video iframe{
+    width: 100%;
+    height: 100%;
+}
 
+.video-title{
+    padding:24px;
+}
+.video-title h3{
+   color: #FFFFFF;
+   font-size: 24px;
+   margin-bottom: 15px;
+}
+.video-title p{
+   color:#FFFFFF ;
+   font-size: 16px;
+   margin-bottom: 20px;
+   font-weight: 200;
+
+}
+.duration i{
+    padding-right: 5px;
+}
+.duration{
+   color:#00FF88 ;
+   font-size: 16px;
+}
 
 @media screen and (max-width: 576px) {
     .nav-container{
@@ -396,6 +455,26 @@
     #cart-1{
         padding: 24px;
     }
+    #episodes{
+        padding: 40px 20px;
+    }
+    #episodes h1{
+        font-size: 32px;
+    }
+    .episode-card-container{
+        grid-template-columns:repeat(1, 1fr);
+        gap: 20px;
+    }
+    .video-title{
+        padding: 16px;
+    }
+    .video-title h3{
+        font-size: 20px;
+    }
+    .video-title p{
+        font-size: 16px;
+    }
+
 }
 
     
